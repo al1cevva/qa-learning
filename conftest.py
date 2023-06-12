@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-@pytest.fixture()
+@pytest.fixture
 def driver():
     driver_service = Service(ChromeDriverManager().install())
     #options.add_argument('ignore-certificate-errors')
